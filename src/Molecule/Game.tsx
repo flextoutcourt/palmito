@@ -11,6 +11,7 @@ export interface GameProps{
 
 export const Game = ({children, title, description, component, onClick}: GameProps) => {
 
+    // @ts-ignore
     const [gameName, setGameName] = useContext(GameContext);
 
     const handleClick = () => {

@@ -16,6 +16,7 @@ export const PlayersPredictions = ({children, players}: PlayersPredictionsProps)
 
     const setNumberForPlayer = (number: number, player: PlayerProps) => {
         setPlayers({
+            // @ts-ignore
             Players: players.Players.map((p) => {
                     if (p.name === player.name) {
                         return {...p, number: number};
@@ -30,6 +31,7 @@ export const PlayersPredictions = ({children, players}: PlayersPredictionsProps)
 
     const setSignForPlayer = (sign: string, player: PlayerProps) => {
         setPlayers({
+            // @ts-ignore
             Players: players.Players.map((p) => {
                     if (p.name === player.name) {
                         return {...p, sign: sign};
@@ -42,7 +44,7 @@ export const PlayersPredictions = ({children, players}: PlayersPredictionsProps)
         console.log(players);
     }
 
-    return(
+    return (
         <>
             <div className="grid grid-cols-4 gap-4">
                 {players && players.Players.map((player, key) => (

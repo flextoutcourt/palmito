@@ -50,7 +50,9 @@ export const Palmier = ({children}: PalmierProps) => {
         setDisabledButton(false);
     }
 
+
     return (
+
         <div className={"flex flex-col items-center justify-center max-w-7xl mx-auto h-screen"}>
             <div
                 className="flex flex-row absolute top-0 left-0 right-0 overflow-auto max-w-7xl mx-auto scrollbar scrollbar-thumb-gray-100 scrollbar-thumb-rounded-full">

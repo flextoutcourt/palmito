@@ -32,7 +32,7 @@ export const Pmu = ({children}: PmuProps) => {
     const {register, handleSubmit, formState: {errors}} = useForm();
 
 
-    const onSubmit = (data: PlayerProps) => {
+    const onSubmit = (data: any) => {
         console.log(players);
         setPlayers({Players: [...players.Players, data]});
     }
@@ -45,7 +45,7 @@ export const Pmu = ({children}: PmuProps) => {
         }
     }
 
-    const onPredictions = (data) => {
+    const onPredictions = (data: any) => {
         console.log(data);
     }
 
@@ -78,6 +78,7 @@ export const Pmu = ({children}: PmuProps) => {
     }
 
     return (
+    // @ts-ignore
         <PlayersContext.Provider value={[players, setPlayers, ready, setReady, game, setGame]}>
             {ready
                 ?

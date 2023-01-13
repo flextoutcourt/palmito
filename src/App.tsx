@@ -10,7 +10,9 @@ function App() {
     const [nightMode, setNightMode] = useState(false);
 
     return (
+    // @ts-ignore
         <NightModeContext.Provider value={[nightMode, setNightMode]}>
+            {/*@ts-ignore*/}
             <GameContext.Provider value={[gameName, setGameName]}>
                 <div className={"bg-gray-800"}>
                     <div className="max-w-7xl mx-auto">
