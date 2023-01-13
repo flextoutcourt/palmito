@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar-medium::-webkit-scrollbar {
+        padding-top: 12px;
+        width: 12px;
+    }
+}
