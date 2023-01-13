@@ -12,6 +12,7 @@ export interface ChooseAGameProps {
 
 export const ChooseAGame = ({children}: ChooseAGameProps) => {
 
+    // @ts-ignore
     const [gameName, setGameName] = useContext(GameContext);
 
     const component = () => {
